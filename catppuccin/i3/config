@@ -22,6 +22,15 @@ bindsym $mod+Shift+f exec pcmanfm
 # kill focused window
 bindsym $mod+q kill
 
+# Mute/Unmute
+bindsym F10 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Volume Down
+bindsym F11 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+# Volume Up
+bindsym F12 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -143,7 +152,9 @@ for_window [class=.*] border pixel 2
 
 client.focused #A4B9EF #A4B9EF #A4B9EF #A4B9EF
 client.unfocused #1F1F31 #1F1F31 #1F1F31 #1F1F31
+client.focused_inactive #1F1F31 #1F1F31 #1F1F31 #1F1F31
 
 # Autostart commands
 exec --no-startup-id polybar
-exec always feh --bg-fill /home/ixubux/Wallpapers/04.png
+exec --no-startup-id feh --bg-fill /home/ixubux/Wallpapers/04.png
+exec --no-startup-id blueman-applet
