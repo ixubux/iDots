@@ -17,7 +17,11 @@ tiling_drag modifier titlebar
 # Application shortcuts
 bindsym $mod+Return exec kitty
 bindsym $mod+d exec --no-startup-id rofi -show drun
-bindsym $mod+Shift+f exec pcmanfm
+bindsym $mod+Shift+f exec nautilus
+bindsym $mod+shift+b exec brave
+
+# To lock system
+bindsym $mod+Shift+m exec "/home/ixubux/.config/i3lock/lock.sh"
 
 # kill focused window
 bindsym $mod+q kill
@@ -30,6 +34,15 @@ bindsym F11 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
 
 # Volume Up
 bindsym F12 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+# Next Song
+bindsym $mod+Shift+period exec --no-startup-id playerctl next
+
+# Previous Song
+bindsym $mod+Shift+comma exec --no-startup-id playerctl previous
+
+# Pause/Play Music
+bindsym $mod+Shift+space exec --no-startup-id playerctl play-pause
 
 # change focus
 bindsym $mod+h focus left
@@ -156,5 +169,5 @@ client.focused_inactive #1F1F31 #1F1F31 #1F1F31 #1F1F31
 
 # Autostart commands
 exec --no-startup-id polybar
-exec --no-startup-id feh --bg-fill /home/ixubux/Wallpapers/04.png
+exec --no-startup-id feh --bg-fill /home/ixubux/Wallpapers/01.png
 exec --no-startup-id blueman-applet
