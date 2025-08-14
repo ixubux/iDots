@@ -18,7 +18,9 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec kitty
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+Shift+f exec nautilus
-bindsym $mod+shift+b exec brave
+bindsym $mod+Shift+b exec brave
+bindsym $mod+p exec --no-startup-id shutter --min_at_startup
+bindsym $mod+Shift+p exec --no-startup-id shutter --min_at_startup -f
 
 # To lock system
 bindsym $mod+Shift+m exec "/home/ixubux/.config/i3lock/lock.sh"
