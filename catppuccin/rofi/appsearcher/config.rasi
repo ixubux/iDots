@@ -1,4 +1,4 @@
-@theme "/home/ixubux/.config/rofi/themes/chain.rasi"
+@theme "~/.config/rofi/appsearcher/theme/chain.rasi"
 
 * {
     bg4: #1E1E2E;

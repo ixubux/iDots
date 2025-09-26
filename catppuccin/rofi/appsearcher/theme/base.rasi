@@ -1,5 +1,5 @@
 * {
-    font:   "SF UI Display Bold 12";
+    font:   "SF UI Text Bold 12";
     background-color:   transparent;
     text-color:         @fg0;
     margin:     0px;
