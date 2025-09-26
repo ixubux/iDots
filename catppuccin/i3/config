@@ -16,9 +16,11 @@ tiling_drag modifier titlebar
 
 # Application shortcuts
 bindsym $mod+Return exec kitty
-bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+d exec --no-startup-id rofi -show drun -theme "~/.config/rofi/appsearcher/config.rasi"
+bindsym $mod+Shift+d exec "~/.config/rofi/powermenu/powermenu.sh"
 bindsym $mod+Shift+f exec nautilus
 bindsym $mod+Shift+b exec brave
+bindsym $mod+Shift+y exec --no-startup-id polybar-msg cmd restart
 bindsym $mod+p exec --no-startup-id shutter --min_at_startup
 bindsym $mod+Shift+p exec --no-startup-id shutter --min_at_startup -f
 
@@ -45,6 +47,9 @@ bindsym $mod+Shift+comma exec --no-startup-id playerctl previous
 
 # Pause/Play Music
 bindsym $mod+Shift+space exec --no-startup-id playerctl play-pause
+
+# Set wallpaper
+bindsym $mod+Shift+w exec --no-startup-id ~/Scripts/wallpaper.sh
 
 # change focus
 bindsym $mod+h focus left
