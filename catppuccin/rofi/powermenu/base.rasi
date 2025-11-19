@@ -3,7 +3,7 @@
 
 /* Font */
 * {
-    font: "Cousine Nerd Font Propo 10";
+    font: "Cousine Nerd Font 10";
 }
 
 window {
@@ -61,7 +61,7 @@ dummy {
 textbox-prompt-colon {
     enabled:                     true;
     expand:                      false;
-    str:                         "";
+    str:                         "⏻";
     padding:                     12px 16px;
     border-radius:               0px;
     background-color:            @urgent;
@@ -146,7 +146,7 @@ element {
 }
 
 element-text {
-    font:                        "feather bold 32";
+    font:                        "Cousine Nerd Font Bold 32";
     background-color:            transparent;
     text-color:                  inherit;
     cursor:                      inherit;
